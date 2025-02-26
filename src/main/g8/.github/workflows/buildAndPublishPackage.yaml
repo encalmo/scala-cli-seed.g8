@@ -23,7 +23,7 @@ permissions:
   contents: write # This is required for actions/checkout
   packages: write
   pull-requests: write 
-  
+
 env:
   TAG_PREFIX: '\${{ inputs.tag-prefix }}-'  
 
@@ -79,6 +79,5 @@ jobs:
           tag_name: \${{ env.TAG_PREFIX }}\${{ steps.version.outputs.new_version }}
         env:
           GITHUB_TOKEN: \${{ secrets.GITHUB_TOKEN }}      
-      
 
-          
+

@@ -2,27 +2,28 @@
 
 if [[ -d ./src/main/g8 ]]; then
 
-    if ! command -v g8 &>/dev/null; then
+    if ! command -v g8 &> /dev/null
+    then
         echo "[ERROR] g8 command cannot be found, please install g8 following http://www.foundweekends.org/giter8/setup.html"
         exit -1
     fi
 
-    export TEMPLATE=$(pwd | xargs basename)
+    export TEMPLATE=`pwd | xargs basename`
 
     echo "Creating new project target/sandbox/example from the ${TEMPLATE} template ..."
-
+    
     mkdir -p target/sandbox
     cd target/sandbox
     find . -not -name .git -delete
 
-    g8 file://../../../${TEMPLATE} --name="example" --organization="org.encalmo" --repository="encalmo/example" --package="org.encalmo.example" -o example "$@"
+    g8 file://../../../${TEMPLATE} --name="example" --organization="org.encalmo" --scm="encalmo/example" --package="org.encalmo.example" -o example "$@"
 
     if [[ -d ./example ]]; then
         cd example
         git init
-        git add .
-        git commit -m start
-        scala-cli --power test project.scala --suppress-experimental-warning
+	git add .
+	git commit -m start
+        scala-cli --power test . --suppress-experimental-warning
         echo "Done, created new project in target/sandbox/example"
         exit 0
     else

@@ -1,4 +1,4 @@
-scala-cli-seed
+scala-cli-seed.g8
 ===
 
 A [Giter8](http://www.foundweekends.org/giter8/) template for creating scala-cli project with scripts facilitating Sonatype deployment.
@@ -10,14 +10,14 @@ How to create a new project based on the template?
 * Decide your project name (the hardest part :))
 * Run the command
 
-    `sbt new encalmo/y --branch master --name="example" --organization="org.encalmo" --repository="encalmo/example" --package="org.encalmo.example" -o example`
+    `sbt new encalmo/scala-cli-seed.g8 --branch main --name="example" --organization="org.encalmo" --scm="encalmo/example" --package="org.encalmo.example" -o example`
 
 or    
 
 * Install g8 commandline tool (http://www.foundweekends.org/giter8/setup.html)
 * Run the command
 
-    `g8 encalmo/y --branch master --name="example" --organization="org.encalmo" --repository="encalmo/example" --package="org.encalmo.example" -o example`
+    `g8 encalmo/scala-cli-seed.g8 --branch main --name="example" --organization="org.encalmo" --scm="encalmo/example" --package="org.encalmo.example" -o example`
     
 and then
     
@@ -28,7 +28,7 @@ and then
   
 * Test generated project using command 
 
-    `scala-cli --power test project.scala --suppress-experimental-warning`
+    `scala-cli --power test . --suppress-experimental-warning`
     
 
 How to test the template and generate an example project?
@@ -50,7 +50,7 @@ or (safer) ...
 * run `./test.sh` first
 * open `target/sandbox/example` in your preferred IDE, 
 * modify the generated example project as you wish, 
-* build and test it as usual, you can run `scala-cli test project.scala`,
+* build and test it as usual, you can run `scala-cli --power test . --suppress-experimental-warning`,
 * when you are done switch back to the template root
 * run `./update-g8.sh` in order to port your changes back to the template.
 * run `./test.sh` again to validate your changes
@@ -63,7 +63,7 @@ the template will supply the following values for the placeholders:
 
     $packaged$ -> org/encalmo/example
 	$package$ -> org.encalmo.example
-	$repository$ -> encalmo/example
+	$scm$ -> encalmo/example
 	$organization$ -> org.encalmo
 	$name$ -> example
 	$nameCamel$ -> Example
@@ -77,7 +77,7 @@ and produce the folders and files as shown below:
 	│
 	├── .gitignore
 	├── .scalafmt.conf
-	├── Example.scalax
+	├── Example.scala
 	├── ExampleSpec.test.scala
 	├── LICENSE
 	├── project.scala
