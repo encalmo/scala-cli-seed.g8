@@ -25,7 +25,7 @@ if [[ -d ./src/main/g8 ]]; then
         cd .makeitg8
    fi
 
-   sbt "run --noclear --force --source ../../target/sandbox/example --target ../.. --name scala-cli-seed.g8  --package org.encalmo.example --description scala-cli-seed.g8  -K templateGithubUser=encalmo name=example organization=org.encalmo scm=encalmo%2Fexample" -Dbuild.test.command="scala-cli --power test . --suppress-experimental-warning" 
+   sbt "run --noclear --force --source ../../target/sandbox/example --target ../.. --name scala-cli-seed.g8  --package org.encalmo.example --description scala-cli-seed.g8  -K templateGithubUser=encalmo name=example organization=org.encalmo repository=encalmo%2Fexample" -Dbuild.test.command="scala --power test . --suppress-experimental-warning" 
 
    echo "Done, updated the template based on target/sandbox/example"
    exit 0

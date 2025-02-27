@@ -6,7 +6,7 @@
 //> using option -experimental
 //> using publish.organization "$organization$"
 //> using publish.name "$name$"
-//> using publish.url "https://github.com/$scm$"
+//> using publish.url "https://github.com/$repository$"
 //> using publish.license "MIT"
 //> using publish.developer "arturopala|Artur Opala|https://github.com/arturopala"
-//> using publish.versionControl "github:$scm$"
+//> using publish.versionControl "github:$repository$"

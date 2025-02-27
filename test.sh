@@ -16,14 +16,14 @@ if [[ -d ./src/main/g8 ]]; then
     cd target/sandbox
     find . -not -name .git -delete
 
-    g8 file://../../../${TEMPLATE} --name="example" --organization="org.encalmo" --scm="encalmo/example" --package="org.encalmo.example" -o example "$@"
+    g8 file://../../../${TEMPLATE} --name="example" --organization="org.encalmo" --repository="encalmo/example" --package="org.encalmo.example" -o example "$@"
 
     if [[ -d ./example ]]; then
         cd example
         git init
 	git add .
 	git commit -m start
-        scala-cli --power test . --suppress-experimental-warning
+        scala --power test . --suppress-experimental-warning
         echo "Done, created new project in target/sandbox/example"
         exit 0
     else
