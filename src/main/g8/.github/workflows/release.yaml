@@ -7,7 +7,7 @@ on:
         type: choice
         description: 'How to bump a version?'
         required: true
-        default: 'minor'
+        default: 'patch'
         options:
           - major
           - minor
@@ -23,5 +23,5 @@ jobs:
     uses: ./.github/workflows/buildAndPublishPackage.yaml
     secrets: inherit
     with:
-      tag-prefix: '$name$'
+      tag-prefix: 'version'
       version-bump: \${{ inputs.version-bump || 'patch' }}

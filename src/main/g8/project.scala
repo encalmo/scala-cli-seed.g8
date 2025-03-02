@@ -10,3 +10,4 @@
 //> using publish.license "MIT"
 //> using publish.developer "arturopala|Artur Opala|https://github.com/arturopala"
 //> using publish.versionControl "github:$repository$"
+//> using option -Wunused:imports -deprecation
