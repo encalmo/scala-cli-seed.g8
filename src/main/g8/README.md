@@ -2,6 +2,10 @@
 
 TODO
 
+## Dependencies
+
+- Scala >= 3.6.3
+
 ## Usage
 
 Use with SBT
