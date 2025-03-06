@@ -75,12 +75,13 @@ and produce the folders and files as shown below:
     ├── .github
 	│   └── workflows
 	│       ├── buildAndPublishPackage.yaml
-	│       └── release.yaml
+	│       ├── release.yaml
+	│       └── test.yaml
 	│
 	├── .gitignore
 	├── .scalafmt.conf
 	├── Example.scala
-	├── ExampleSpec.test.scala
+	├── Example.test.scala
 	├── LICENSE
 	├── project.scala
 	├── README.md

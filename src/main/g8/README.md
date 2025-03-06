@@ -1,3 +1,5 @@
+![Maven Central Version](https://img.shields.io/maven-central/v/org.$repository$_3?style=for-the-badge&link=https%3A%2F%2Fcentral.sonatype.com%2Fartifact%2F$organization$%2F$name$_3)
+
 # $name$
 
 TODO
@@ -18,4 +20,6 @@ or with SCALA-CLI
 
 ## $nameCamel$s
 
-TODO
+```scala
+
+```
