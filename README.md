@@ -74,7 +74,6 @@ and produce the folders and files as shown below:
 
     ├── .github
 	│   └── workflows
-	│       ├── buildAndPublishPackage.yaml
 	│       ├── release.yaml
 	│       └── test.yaml
 	│
@@ -85,8 +84,4 @@ and produce the folders and files as shown below:
 	├── LICENSE
 	├── project.scala
 	├── README.md
-	├── scripts
-	│   ├── computeNewVersion.sc
-	│   └── createReleaseBundle.sc
-	│
 	└── test.sh
