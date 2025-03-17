@@ -1,4 +1,4 @@
-![Maven Central Version](https://img.shields.io/maven-central/v/org.$repository$_3?style=for-the-badge&link=https%3A%2F%2Fcentral.sonatype.com%2Fartifact%2F$organization$%2F$name$_3)
+<a href="https://central.sonatype.com/artifact/org.$repository$_3" target="_blank">![Maven Central Version](https://img.shields.io/maven-central/v/org.$repository$_3?style=for-the-badge)</a> <a href="https://encalmo.github.io/$name$/scaladoc/$packaged$.html" target="_blank"><img alt="Scaladoc" src="https://img.shields.io/badge/docs-scaladoc-red?style=for-the-badge"></a>
 
 # $name$
 

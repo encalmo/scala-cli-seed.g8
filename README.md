@@ -74,6 +74,7 @@ and produce the folders and files as shown below:
 
     ├── .github
 	│   └── workflows
+	│       ├── pages.yaml
 	│       ├── release.yaml
 	│       └── test.yaml
 	│
