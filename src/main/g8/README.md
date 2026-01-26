@@ -6,7 +6,7 @@ TODO
 
 ## Dependencies
 
-- Scala >= 3.6.3
+- Scala >= 3.7.4
 
 ## Usage
 

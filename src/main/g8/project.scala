@@ -1,7 +1,7 @@
-//> using scala 3.6.3
+//> using scala 3.7.4
 //> using exclude scripts
-//> using test.dep org.scalameta::munit:1.1.0
-//> using test.toolkit 0.7.0
+//> using test.dep org.scalameta::munit:1.2.1
+//> using test.toolkit 0.8.0
 //> using option -Xmax-inlines 128
 //> using option -experimental
 //> using publish.organization "$organization$"

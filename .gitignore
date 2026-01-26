@@ -28,7 +28,6 @@ node_modules/
 .vscode/
 .bsp/
 .scala-build/
-
-
 _site/
 *.zip
+.cursor/
