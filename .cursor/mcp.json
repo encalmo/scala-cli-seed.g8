@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "scala-cli-seed.g8-metals": {
+      "url": "http://localhost:61597/mcp"
+    }
+  }
+}
